@@ -3,3 +3,6 @@
 
 # mlruns
 mlruns/
+
+# code
+.DS_Store
