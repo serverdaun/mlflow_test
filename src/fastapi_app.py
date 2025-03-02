@@ -7,7 +7,7 @@ import pandas as pd
 from typing import List
 
 
-EXPERIMENT_ID = "518548913358764652"  # Retrieved from MLflow UI
+EXPERIMENT_NAME = "breast_cancer"  # Defined in src/train.py
 MODEL_ARTIFACT_PATH = "sklearn_breast_cancer_classifier"
 
 
@@ -18,7 +18,7 @@ def load_best_model():
     """
     Load the best model from the MLflow experiment.
     """
-    runs_df = mlflow.search_runs(experiment_ids=[EXPERIMENT_ID])
+    runs_df = mlflow.search_runs(experiment_names=[EXPERIMENT_NAME])
     best_run_index = runs_df[
         "metrics.accuracy"
     ].idxmax()  # Get the index of the row with max accuracy
