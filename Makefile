@@ -8,5 +8,8 @@ lint:
 format:
 	black src/*.py
 
-run:
+train:
 	python src/train.py
+
+run:
+	python src/fastapi_app.py
