@@ -1,12 +1,11 @@
-# FastAPI Machine Learning Project
+# MLflow Machine Learning Project
 
 ## Overview
 
-This is simple project i created for trying to use MLflow. The project consists of:
+This is simple project i created to try out using MLflow. The project consists of:
 
 - A **FastAPI app** to serve predictions.
-- A **MLflow** for monitoring experiment tracking.
-- A **training script** to build and update the model.
+- A **training script** to build and update the model using MLflow experiments 
 - A **Makefile** for automation.
 
 ## Installation
